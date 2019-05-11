@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #app{
+            border: 1px solid #a9a9a9;
+            height: 100px;
+            width: 200px;
+        }
+        #app p{
+            font-weight: bold;
+        }
+        p{
+            margin: 0px;
+            padding: 0px;
+            padding-top: 10px; 
+        }
+        .container{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="container">
+        <p>Исходное положение:</p>
+        <input type="text" v-model="location" /><br><br>
+        <button @click="possibleMoves()">Ок</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="script.js"></script>
+</body>
+</html>
